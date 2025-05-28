@@ -9,19 +9,18 @@ class UserHero {
             monge: "artes marciais",
             ninja: "shuriken"
         };
-    }
-    
-    escreva(){
+    };
+    escreva() {
         let ataque = "ataque desconhecido";
-        for (let tipo in this.ataque){
-            if (tipo === this.tipo){
+        for (let tipo in this.ataque) {
+            if (tipo === this.tipo) {
                 ataque = this.ataque[tipo];
                 break;
-                }
-            }
+            };
+        };
         console.log(`${this.nome} é ${this.tipo} e atacou usando ${ataque}`);
-            }
+    };
+};
 
- }
-    let usuario = new UserHero("Nicolly", 27, "mago");
-usuario.escreva(); 
+let usuario = new UserHero("Nicolly", 27, "mago");
+usuario.escreva();
